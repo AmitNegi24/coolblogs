@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+{% block body %}
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('    {{ url_for('static', filename='img/home-bg.jpg') }}    ')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>WELCOME IN DASHBOARD</h1>
+                                <span class="subheading">{{params['tag_line']}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <h1 style="text-align: center;">WELCOME YOU LOGGED IN</h1>
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <h1>Basic Actions</h1>  
+                <a href="/dashboard"><button class="btn btn-primary">Dashboard</button></a>
+                <a href="/logout"><button class="btn btn-primary">Logout</button></a>
+                <hr>
+                    <h1>ADD/EDIT</h1>
+                    <form name="sentMessage" id="contactForm" action = "/edit/{{post.sno}}" method="post" novalidate>
+                        <div class="control-group">
+                          <div class="form-group floating-label-form-group controls">
+                            <label>Title</label>
+                            <input type="text" class="form-control" placeholder="Title" id="title" name='title' value="{{post.title}}">
+                            <p class="help-block text-danger"></p>
+                          </div>
+                        </div>
+            
+                        <div class="control-group">
+                          <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Slug</label>
+                            <input type="text" class="form-control" placeholder="slug" name="slug" id="slug" value="{{post.slug}}">
+                            <p class="help-block text-danger"></p>
+                          </div>
+                        </div>
+                        <div class="control-group">
+                          <div class="form-group floating-label-form-group controls">
+                            <label>Content</label>
+                            <textarea rows="5" class="form-control" placeholder="content" name = "content" id="content" >{{post.content}}</textarea>
+                            <p class="help-block text-danger"></p>
+                          </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls">
+                              <label>Image file</label>
+                              <input class="form-control" placeholder="image" name = "img_file" id="img_file" value="{{post.img_file}}">
+                              <p class="help-block text-danger"></p>
+                            </div>
+                          </div>
+                        <br>
+                        <div id="success"></div>
+                        <div class="form-group">
+                          <button type="submit" class="btn btn-primary" id="sendMessageButton">Submit</button>
+                        </div>
+                      </form>
+
+        {% endblock %}
+        

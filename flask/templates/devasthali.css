@@ -1,0 +1,224 @@
+* {
+    margin: :0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+    
+  }
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+/* Navigation Bar */
+#navbar{
+    
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color:white;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+.checkbtn
+{
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check
+{
+    display: none;
+}
+#logo
+{
+margin: 10px,34px;
+padding:  1px;
+}
+#logo img
+{
+    margin: 3px,6px;
+    height: 70px;
+    width: 170px;
+
+
+}
+#navbar ul
+{
+    display: flex;
+    list-style: none;
+    color:black;
+    margin-top: 8px;
+    
+    
+
+}
+#navbar ul li
+{
+    list-style: none;
+    font-size: 1.3rem;
+    width: 170px;
+    text-align: center;
+}
+#navbar ul a 
+{
+color: black;
+font-size: 20px;
+font-family: 'Galada', cursive;
+
+}
+#navbar ul li a:hover
+{   
+    background-color: rgb(0, 195, 255);
+    border-radius: 21px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Galada', cursive;
+    
+}
+a.active,a:hover
+{
+    background-color: darkorange;
+    transition: .5s;
+}
+#home
+{
+    display:flex;
+    flex-direction: column;
+    padding: 3px,200px;
+    height: 578px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before
+{
+    content: "";
+    position: absolute;
+    background:url("logo1.jfif") no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#home h1
+{
+color:black;
+text-align: center;
+font-family: 'Galada', cursive;
+}
+#home p
+{
+color: black;
+text-align: center;
+font-size: 15px;
+font-family: 'Galada', cursive;
+}
+/*services section*/
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 44px;
+    margin: 50px 100px;
+    border-radius: 23px;
+    background-color: rgb(177, 154, 159);
+} 
+#services .box p{
+    font-family: 'Lobster', cursive;
+}
+#services2
+{
+    margin: 34px;
+    display: flex;
+    
+}
+#services2 .box
+{
+    border: 2px solid brown;
+    padding: 44px;
+    margin: 50px 100px;
+    border-radius: 23px;
+    background-color: rgb(177, 154, 159);
+    font-family: 'Galada', cursive;
+}
+#services2 .box img
+{
+    width:160px;
+    height: 160px;
+    display: block;
+    margin: auto;
+
+}
+.h-primary
+{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Galada', cursive;
+}
+.h-secondary
+{
+    font-size: 2.1rem;
+    padding: 12px;
+    font-family: 'Bree Serif' serif;
+}
+.center{
+    text-align: center;
+}
+.btn{
+    padding: 1px 5px;
+    border: 2px solid white;
+    background-color:black;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+    
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    margin-top: 550px;
+}
+.fa-instagram {
+    background:crimson;
+    color: white;
+}
+.fa {
+    padding: 5px;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}

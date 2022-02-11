@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+{% block body %}
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('    {{ url_for('static', filename='img/about-bg.jpg') }}    ')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="page-heading">
+                            <h1>About Me</h1>
+                            <span class="subheading">This is what I do.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+  
+    <!--Grid column-->
+    <div class="col-md-6 mb-4">
+  
+      <!--Card-->
+      <div class="card card-cascade narrower">
+  
+        <!--Card image-->
+        <div class="view view-cascade gradient-card-header peach-gradient">
+          <h5 class="mb-0">OUR LOCATION</h5>
+        </div>
+        <!--/Card image-->
+  
+        <!--Card content-->
+        <div class="card-body card-body-cascade text-center">
+  
+          <!--Google map-->
+          <div id="map-container-google-9" class="z-depth-1-half map-container-5" style="height: 300px">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.728940753623!2d77.99759041496382!3d30.273303481799623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092bca3fc0ccf3%3A0xd19900de8c24dbee!2sGraphic%20Era%20Hill%20University!5e0!3m2!1sen!2sus!4v1637478131214!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+              style="border: 5px;" allowfullscreen></iframe>
+          </div>
+  
+  
+        </div>
+        <!--/.Card content-->
+  
+      </div>
+      <!--/.Card-->
+  
+    </div>
+    <!--Grid column-->
+  
+  </div>
+  <!--Grid row-->
+  <style>
+  .map-container-5{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
+    .map-container-5 iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    }
+    </style>
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>I am a student in this college it has very good campus and 19th beautiful campus all over the India </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae voluptatum in officia voluptas voluptatibus, minus!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur magnam, excepturi aliquid ex itaque esse est vero natus quae optio aperiam soluta voluptatibus corporis atque iste neque sit tempora!</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+{% endblock %}
+        
