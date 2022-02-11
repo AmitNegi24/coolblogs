@@ -6,8 +6,8 @@
         "prod_uri":"mysql://root:@localhost/codingthunder",
         "fb_url":"https://facebook.com/codingthunder",
         "blog_name":"Coolblogs",
-        "gmail-user":"mramitnegig1999@gmail.com",
-        "gmail-password":"amit9627",
+        "gmail-user":"your email id",
+        "gmail-password":"your password",
         "no_of_posts": 2,
         "admin_user":"Amit07",
         "admin_password": "password"
